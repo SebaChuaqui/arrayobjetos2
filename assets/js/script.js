@@ -113,9 +113,9 @@ document.write(`<h4>------------------------------------------------------------
 
 // CANTIDAD DE ATENCIONES
 
-document.write(`<h2>Cantidad de Atenciones Radiología: ${radiologia.length}</h2>`);
-document.write(`<h2>Cantidad de Atenciones Traumatología: ${traumatologia.length}</h2>`);
-document.write(`<h2>Cantidad de Atenciones Dentales: ${dental.length}</h2>`);
+document.write(`<h3>Cantidad de Atenciones Radiología: ${radiologia.length}</h3>`);
+document.write(`<h3>Cantidad de Atenciones Traumatología: ${traumatologia.length}</h3>`);
+document.write(`<h3>Cantidad de Atenciones Dentales: ${dental.length}</h3>`);
 
 document.write(`<h4>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>`);
 

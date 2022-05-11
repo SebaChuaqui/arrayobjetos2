@@ -59,6 +59,18 @@ document.write(`<h4>------------------------------------------------------------
 // médico. Para esto, deberá unir todos los nombres de pacientes e imprimir uno por
 // cada párrafo.
 
+document.write(`<h2>Lista de todos los pacientes del centro médico</h2>`);
+
+// Método concat() para unir los tres arreglos en uno
+let pacientes = radiologia.concat(traumatologia,dental);
+
+// Método forEach() para imprimir en la página una lista con cada paciente del 
+// arreglo en una fila cada uno
+pacientes.forEach(function(usuarios){
+    document.write(`<p>${usuarios.Paciente}</p>`);
+});
+
+document.write(`<h4>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>`);
 
 // CANTIDAD DE ATENCIONES
 

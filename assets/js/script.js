@@ -62,13 +62,13 @@ document.write(`<h4>------------------------------------------------------------
 
 // CANTIDAD DE ATENCIONES
 
-document.write(`<h3>Cantidad de Atenciones Radiología: ${radiologia.length}</h3>`);
-document.write(`<h3>Cantidad de Atenciones Traumatología: ${traumatologia.length}</h3>`);
-document.write(`<h3>Cantidad de Atenciones Dentales: ${dental.length}</h3>`);
+document.write(`<h2>Cantidad de Atenciones Radiología: ${radiologia.length}</h2>`);
+document.write(`<h2>Cantidad de Atenciones Traumatología: ${traumatologia.length}</h2>`);
+document.write(`<h2>Cantidad de Atenciones Dentales: ${dental.length}</h2>`);
 
 // PRIMERA Y ÚLTIMA ATENCIÓN PACIENTES
 
-document.write(`<h5>PRIMERA ATENCIÓN: ${radiologia[0].Paciente} -- ${radiologia[0].Previsión} | ÚLTIMA ATENCIÓN: ${radiologia[radiologia.length - 1].Paciente} -- ${radiologia[radiologia.length - 1].Previsión}</h5>`);
-document.write(`<h5>PRIMERA ATENCIÓN: ${traumatologia[0].Paciente} -- ${traumatologia[0].Previsión} | ÚLTIMA ATENCIÓN: ${traumatologia[traumatologia.length - 1].Paciente} -- ${traumatologia[traumatologia.length - 1].Previsión}</h5>`);
-document.write(`<h5>PRIMERA ATENCIÓN: ${dental[0].Paciente} -- ${dental[0].Previsión} | ÚLTIMA ATENCIÓN: ${dental[dental.length - 1].Paciente} -- ${dental[dental.length - 1].Previsión}</h5>`);
+document.write(`<h4>PRIMERA ATENCIÓN: ${radiologia[0].Paciente} -- ${radiologia[0].Previsión} | ÚLTIMA ATENCIÓN: ${radiologia[radiologia.length - 1].Paciente} -- ${radiologia[radiologia.length - 1].Previsión}</h4>`);
+document.write(`<h4>PRIMERA ATENCIÓN: ${traumatologia[0].Paciente} -- ${traumatologia[0].Previsión} | ÚLTIMA ATENCIÓN: ${traumatologia[traumatologia.length - 1].Paciente} -- ${traumatologia[traumatologia.length - 1].Previsión}</h4>`);
+document.write(`<h4>PRIMERA ATENCIÓN: ${dental[0].Paciente} -- ${dental[0].Previsión} | ÚLTIMA ATENCIÓN: ${dental[dental.length - 1].Paciente} -- ${dental[dental.length - 1].Previsión}</h4>`);
 

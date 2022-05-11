@@ -49,6 +49,7 @@ radiologia.pop(); // ELIMINA EL ÚLTIMO
 
 document.write(`<h4>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>`);
 document.write(`<h2>Lista de Consultas Médicas Dental</h2>`);
+// Método forEach
 dental.forEach(function(dentales){
 document.write(`<p>${dentales.Hora} - ${dentales.Especialista} - ${dentales.Paciente} - ${dentales.Rut} - ${dentales.Previsión}</p>`);
 });
@@ -59,18 +60,43 @@ document.write(`<h4>------------------------------------------------------------
 // médico. Para esto, deberá unir todos los nombres de pacientes e imprimir uno por
 // cada párrafo.
 
-document.write(`<h2>Lista de todos los pacientes del centro médico</h2>`);
+document.write(`<h2>Lista de Todos los Pacientes del Centro Médico</h2>`);
 
-// Método concat() para unir los tres arreglos en uno
+// Método concat()
 let pacientes = radiologia.concat(traumatologia,dental);
 
-// Método forEach() para imprimir en la página una lista con cada paciente del 
-// arreglo en una fila cada uno
+// Método forEach()
 pacientes.forEach(function(usuarios){
     document.write(`<p>${usuarios.Paciente}</p>`);
 });
 
 document.write(`<h4>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>`);
+
+
+// 5. Filtrar aquellos pacientes que indican ser de ISAPRE en la lista
+// de consultas médicas de Dental.
+
+document.write(`<h2>Pacientes Consulta Dental con ISAPRE</h2>`);
+
+// Método Filter
+
+let isapreDental = dental.filter(function(dentales){
+    return (dentales.Previsión == 'ISAPRE');
+});
+
+// Método forEach()
+
+isapreDental.forEach(function(dentales){
+    document.write(`<p>${dentales.Paciente} -- ${dentales.Previsión}</p>`);
+});
+
+document.write(`<h4>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h4>`);
+
+// 6. Filtrar aquellos pacientes que indican ser de FONASA en la lista de 
+// consultas médicas de Traumatología.
+
+
+
 
 // CANTIDAD DE ATENCIONES
 
